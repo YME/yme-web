@@ -20,10 +20,10 @@ a.none:hover {text-decoration: none;}
 .navbar {-moz-border-radius: 0;-webkit-border-radius: 0;border-radius: 0;margin-bottom: 0;}
 .navbar .container {position: relative;}
 .navbar-default {-moz-transition: all 0.3s ease-out;-o-transition: all 0.3s ease-out;-webkit-transition: all 0.3s ease-out;transition: all 0.3s ease-out;width: 100%;border: none;border-bottom: 1px solid #e7e7e7;background-color: #80171b;}
-.navbar-default .navbar-nav > li > a {color: #404040;font-weight: normal;font-size: 13px;}
-.navbar-default .navbar-nav > li > a:hover {background-color: transparent;color: #005FA6;}
+.navbar-default .navbar-nav > li > a {color: #fff;font-weight: normal;font-size: 13px;}
+.navbar-default .navbar-nav > li > a:hover {background-color: transparent;color: #fff;}
 .navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover,.navbar-default .navbar-nav > .open > a:focus {background-color: transparent;color: #005FA6;}
-.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav .active > a:hover,.navbar-default .navbar-nav .active > a:focus {color: #005FA6;background-color: transparent;}
+.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav .active > a:hover,.navbar-default .navbar-nav .active > a:focus {color: #fff;background-color: transparent;font-weight: bold;}
 .navbar-default .navbar-toggle {margin: 10px 0 0 15px;}
 .navbar-default .navbar-toggle,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {border: none;background: #f3f3f3;}
 .navbar-default .navbar-toggle i {font-size: 31px;}
