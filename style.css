@@ -102,11 +102,11 @@ footer.site-footer {background: #e6e6e6;padding: 20px 0 0;float: left;width: 100
 footer.site-footer h4 {font-size: 17px;font-weight: 500;}
 footer.site-footer ul {padding-left: 0;margin-bottom: 20px;list-style: none;}
 footer.site-footer ul a {color: #666;font-size: 13px;}
-footer.site-footer p {font-size: 13px;}
+footer.site-footer p {font-size: 13px;padding:0px;}
 footer.site-footer p a {color: #666;}
 p.text {color: #666;}
 #copyright {background: #80171b;color: #ccc;padding: 15px 0;font-size: 12px;margin-top: 20px;}
-#copyright p, #copyright ul {margin: 0;float: left;font-size: 12px;}
+#copyright p, #copyright ul {margin: 0px;float: left;font-size: 12px;}
 #copyright a {color: #fff;font-size: 12px;}
 .site-footer li a:hover {color:#005FA6;}
 ul.big li {float: left;width: 49%;}
