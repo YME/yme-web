@@ -13,12 +13,21 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
+
     <header class="site-header">
         <!--
         <div class="top">
@@ -92,6 +101,25 @@
 			</div>
 		</nav>
     </header>
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 41.561532, lng: -8.397823};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAViU1GBSbcI3I5ZJrLAmbGPk5jmRK2gzA&callback=initMap">
+    </script>
+
     <main class="site-main">
         <!--
         <section class="hero_area">
@@ -136,77 +164,10 @@
         </section>-->
         <section class="services">
             <h2 class="section-title">CONTACTOS</h2>
-            <p class="desc">Os nossos serviços</p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <i color="#f20da6"class="fa fa-cogs"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">PRIMEIRO TÍTULO</h4>
-                                <p>Lorem ipsum dolor amet,consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <i color="#f20da6"class="fa fa-user-md"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SEGUNDO TÍTULO</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <i color="#f20da6"class="fa fa-stethoscope"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">TERCEIRO TÍTULO</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <i color="#f20da6"class="fa fa-graduation-cap"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">QUARTO TÍTULO</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <i color="#f20da6"class="fa fa-file-text-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">QUINTO TÍTULO</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <i color="#f20da6"class="fa fa-heartbeat"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SEXTO TÍTULO</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="desc">Caso queiras saber mais, contacta-nos!</p>
+            <center><font size="6"><a href="tel:+351918684752"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +351 918 684 752</a></font></center>
+            <center><font size="6"><a href="mailto:geral@yme.pt"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> geral@yme.pt</a></font></center>
+        </div>
         </section>
         <section class="home-area">
             <div class="home_content">
@@ -360,7 +321,7 @@
                                 </div>-->
                             </div>
                         </div>
-                        -->
+                        
                         <!--<div class="col-sm-3">
                             <h2 class="sub_title w10">CONTACTAR-TE</h2>
                             <div class="clearfix"></div>
@@ -393,44 +354,12 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12 fbox">
                     <h4>Young Minho Enterprise</h4>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue lectus diam, sit amet cursus massa efficitur sed. </p>
                     <ul class="list-inline">
-                        <li><a href="https://www.facebook.com/youngminhoenterprise"><i color="#f20da6"class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/young-minho-enterprise/"><i color="#f20da6"class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.youtube.com/user/YoungMinhoEnterprise/videos"><i color="#f20da6"class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.facebook.com/youngminhoenterprise" target="_blank"><i color="#f20da6"class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/youngminhoenterprise/" target="_blank"><i color="#f20da6"class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/young-minho-enterprise/" target="_blank"><i color="#f20da6"class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/YoungMinhoEnterprise/videos" target="_blank"><i color="#f20da6"class="fa fa-youtube"></i></a></li>
                     </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
-                    <h4>SERVIÇOS</h4>
-                    <ul class="big">
-                        <li><a href="#" title="">Título Um</a></li>
-                        <li><a href="#" title="">Título Dois</a></li>
-                        <li><a href="#" title="">Título Três</a></li>
-                        <li><a href="#" title="">Título Quatro</a></li>
-                        <li><a href="#" title="">Título Cinco</a></li>
-                        <li><a href="#" title="">Título Seis</a></li>
-                        <li><a href="#" title="">Título Sete</a></li>
-                        <li><a href="#" title="">Título Oito</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
-                    <h4>CONTEÚDO</h4>
-                    <ul class="big">
-                        <li><a href="#" title="">Título Um</a></li>
-                        <li><a href="#" title="">Título Dois</a></li>
-                        <li><a href="#" title="">Título Três</a></li>
-                        <li><a href="#" title="">Título Quatro</a></li>
-                        <li><a href="#" title="">Título Cinco</a></li>
-                        <li><a href="#" title="">Título Seis</a></li>
-                        <li><a href="#" title="">Título Sete</a></li>
-                        <li><a href="#" title="">Título Oito</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
-                    <h4>CONTEÚDO</h4>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p><a href="tel:+351918684752"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +351 918 684 752</a></p>
-                    <p><a href="mailto:comercial@yme.pt"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> comercial@yme.pt</a></p>
                 </div>
             </div>
         </div>
@@ -441,14 +370,6 @@
                         <p class="pull-left">&copy; 2018 Young Minho Enterprise</p>
                     </div>
                     <div class="col-md-8">
-                        <!--<ul class="list-inline navbar-right">
-                            <li><a href="#">INÍCIO</a></li>
-                            <li><a href="#">MENU ITEM</a></li>
-                            <li><a href="#">MENU ITEM</a></li>
-                            <li><a href="#">MENU ITEM</a></li>
-                            <li><a href="#">MENU ITEM</a></li>
-                            <li><a href="#">MENU ITEM</a></li>
-                        </ul>-->
                     </div>
                 </div>
             </div>
