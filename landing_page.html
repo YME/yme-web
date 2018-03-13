@@ -7,42 +7,91 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>YME</title>
+
         <style type = "text/css">
-        @import url('http://fonts.googleapis.com/css?family=Optima');
 
-           body {
-             margin: 0;
-             padding: 0;
-             background-attachment: fixed;
-             background-size: cover;
-            }
-            a   {color: white;
-                 font-size: 100px;
-                 text-decoration:none;
-                 font-family: Marker Felt, fantasy;
-                 text-align: center;
-            }
+          @import url('http://fonts.googleapis.com/css?family=Optima');
 
-           #video-background {
-             position: fixed;
-             right: 0;
-             bottom: 0;
-             min-width: 100%;
-             min-height: 100%;
-             width: auto;
-             height: auto;
-             z-index: -100;
-           }
-           h1   {color: blue;}
+             body {
+               margin: 0;
+               padding: 0;
+               background-attachment: fixed;
+               background-size: cover;
+              }
+              button {
+                cursor: pointer;
+              }
+
+             #video-background {
+               position: fixed;
+               right: 0;
+               bottom: 0;
+               min-width: 100%;
+               min-height: 100%;
+               width: auto;
+               height: auto;
+               z-index: -100;
+             }
+
+             h1   {color: blue;}
+
+             button {
+              width: 150px;
+              height: 50px;
+              font-size: 18px;
+              line-height: 46px;
+              background-color: rgba(255, 255, 255, 0.90);
+              color: #333333;
+             }
 
 
-                  </style>
+              @media only screen and (min-width: 35em)
+                
+                .thing{
+                    width: 150px;
+                    height: 50px;
+                    font-size: 18px;
+                    line-height: 46px;
+                    display: inline-block;
+                    width: 100px;
+                    height: 33px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 29px;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
+                    transition: background 0.2s ease-out, color 0.2s ease-out;
+                    margin: 0px 20px 0px 0px;"
+                    background-color: rgba(255, 255, 255, 0.90);
+                }
+                
+                h1 {
+                  font-family: 'Lato', sans-serif;
+                  color: white;
+                }
+
+                a {
+                    background: rgba(255, 255, 255, 0.90);
+                    font-family: 'Lato', sans-serif;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+
+
+                </style>
               </head>
                 <body>
 
-                    <div class="content">
-                          <div class="title m-b-md" style="text-align:center" style="color: red">
-                               <a href="./index.html" > INICIO</a>
+                    <div class="content" style="margin-top:20vh; ">
+                          <div class="title m-b-md" style="text-align:center; display:block">
+                            <img src="img/ymew.png"></img>
+                            <h1 style="text-align:center">Young Minho Enterprise</h1>    
+                            <br>                        
+                            <a class="button" style="width: 150px; height: 50px; font-size: 18px; width: 100px; height: 33px; font-weight: bold; line-height: 29px; text-decoration: none; text-align: center; border: 2px solid #fff; padding: 20px 20px 20px 20px;color:#333333;" href="index.html">Ir para o site</a>
                           </div>
 
 
