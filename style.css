@@ -23,7 +23,7 @@ a.none:hover {text-decoration: none;}
 .navbar-default .navbar-nav > li > a {color: #fff;font-weight: normal;font-size: 13px;}
 .navbar-default .navbar-nav > li > a:hover {background-color: transparent;color: #f64bbe;}
 .navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover,.navbar-default .navbar-nav > .open > a:focus {background-color: transparent; color: #f64bbe;}
-.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav .active > a:hover,.navbar-default .navbar-nav .active > a:focus {color: #fff;background-color: transparent;font-weight: bold;}
+.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav .active > a:hover,.navbar-default .navbar-nav .active > a:focus {color: #f64bbe;background-color: transparent;font-weight: bold;}
 .navbar-default .navbar-toggle {margin: 10px 0 0 15px;}
 .navbar-default .navbar-toggle,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {border: none;background: #f3f3f3;}
 .navbar-default .navbar-toggle i {font-size: 31px;}
