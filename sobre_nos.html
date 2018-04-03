@@ -12,12 +12,118 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <style>
+        * {box-sizing: border-box}
+        .mySlides {display: none}
+        .myDescriptions{
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-indent: 50px;
+            text-align: justify;
+        }
+        img {vertical-align: middle;}
 
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        /* Slideshow container */
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color:#f20da6;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: #f20da6;
+        text-decoration: none;
+        }
+
+        /* Caption text */
+        .text {
+        color: #f20da6;
+        font-weight: 800;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #f760c5;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .dot_active, .dot:hover {
+        background-color: #f20da6;
+        }
+
+        /* Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+    
 </head>
+
+
 <body>
     <header class="site-header">
         <!--
@@ -91,6 +197,7 @@
             </div>
         </nav>
     </header>
+
     <main class="site-main">
 
         <section class="services">
@@ -100,8 +207,128 @@
             </div>
         </section>
 
+
+        
         <section class="services">
-            <h2 id="departamentos" class="section-title">OS DEPARTAMENTOS</h2>
+            <h2 id="departamentos" class="section-title" style="margin-bottom:40px;">OS DEPARTAMENTOS</h2>
+
+            <div class="slideshow-container">
+
+                    <div class="mySlides">
+                        <div>
+                        <div class="numbertext">1 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                        <div class="text">Departamento de Comunicação</div>   
+                        </div>
+                    </div>                
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+                        <div class="text">Departamento Financeiro</div>
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                        <div class="text">Departamento de Informática</div>
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                        <div class="text">Departamento Jurídico</div>
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+                        <div class="text">Departamento de Recursos Humanos</div>
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                        <div class="text">Departamento Comercial</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+                <br>
+                        
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+
+                <div style="color:black; font-size:15px";>
+                    <div class="myDescriptions">
+                        <p>O Departamento de Comunicação terá como base de trabalho a dinamização da imagem da sua empresa ou da sua marca, consoante ferramentas comunicacionais que a auxiliem, nomeadamente, no recurso à publicidade, na escrita criativa, na gestão de redes sociais e na produção de multimédia. Internamente, este gere a imagem da YME, através da redes sociais, do E-mail Marketing e do conteúdo do website. Realiza também todas as tarefas relacionadas com a criação de material de multimédia, seja para uso externo, seja para uso interno.</p>
+                    </div>   
+                    
+                    <div class="myDescriptions">
+                        <p>O Departamento Financeiro encontra-se disposto a lidar com situações de faturação e tesouraria, auxiliando na gestão dos negócios de PME’s. Internamente, este está responsável por gerir a disponibilidade monetária da YME, criando orçamentos e promovendo medidas de priorização de gastos.</p>
+                    </div>
+
+                    <div class="myDescriptions">
+                        <p>De acordo com as mais recentes exigências no desenvolvimento de um negócio nos dias de hoje, o nosso departamento informático auxiliará na criação e dinamização da presença online da sua empresa através da sua criação, organização e gestão.</p>
+                    </div>
+
+                    <div class="myDescriptions">
+                        <p>Poderá auxiliar na criação de regulamentos que estipulem o seu modus operandi e discriminem ainda os direitos e deveres internos à sua organização. No âmbito interno, este representa a YME em qualquer matéria legal, criando regulamentos, contratos com parceiros, clientes, etc.</p>
+                    </div>
+
+                    <div class="myDescriptions">
+                        <p>Pretende estreitar as relações existentes entre os seus colaboradores, através de atividades personalizadas que fomentem o espírito de equipa, e gerir e maximizar o potencial de cada membro da equipa, acompanhado durante todo o seu processo, desde do recrutamento ao trabalho contínuo no seu departamento e/ou equipa de trabalho.</p>
+                    </div>
+
+                    <div class="myDescriptions">
+                        <p>A equipa comercial executa as vendas dos produtos e serviços oferecidos pela empresa. Para isso, analisa a concorrência, faz pesquisas de mercado para conhecer o que, realmente, pretende o consumidor, verifica a necessidade de publicidade e preocupa-se com a qualidade e aprimoramento dos bens e serviços, entre outras tarefas, com o objetivo final de auferir e satisfazer os clientes.</p>
+                    </div>
+                </div>
+        
+                <br>            
+                
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var descriptions = document.getElementsByClassName("myDescriptions");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}    
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                            descriptions[i].style.display = "none";  
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" dot_active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        descriptions[slideIndex-1].style.display = "block"; 
+                        dots[slideIndex-1].className += " dot_active";
+                    }
+                </script>
+
+
+            <!--
             <div class="container" style="color:black; font-size:15px";>                
                 <p class="desc semIndent" style="color:black; font-size:20px; margin-top:50px; margin-bottom:40px;">
                     <span style="color:black; font-size:20px; border-bottom: 2px solid #f20da6; padding-bottom:5px;">
@@ -150,6 +377,7 @@
                 </p>
                 <p style="text-indent:50px;">A equipa comercial executa as vendas dos produtos e serviços oferecidos pela empresa. Para isso, analisa a concorrência, faz pesquisas de mercado para conhecer o que, realmente, pretende o consumidor, verifica a necessidade de publicidade e preocupa-se com a qualidade e aprimoramento dos bens e serviços, entre outras tarefas, com o objetivo final de auferir e satisfazer os clientes.</p>
             </div>
+            -->
         </section>
 
         <section class="services">
