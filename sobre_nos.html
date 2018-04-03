@@ -64,7 +64,7 @@
         .text {
         color: #f20da6;
         font-weight: 800;
-        font-size: 15px;
+        font-size: 18px;
         padding: 8px 12px;
         position: absolute;
         top: 8px;
@@ -118,6 +118,21 @@
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
         .prev, .next,.text {font-size: 11px}
+        }
+
+
+        .dept_img{
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        @media only screen and (max-width: 893px){
+              
+            .dept_img{
+                width: 100%;
+                margin-left: 0%;
+            }
+
         }
     </style>
     
@@ -217,38 +232,38 @@
                     <div class="mySlides">
                         <div>
                         <div class="numbertext">1 / 6</div>
-                        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                        <img src="img/dept_comunicacao.jpg" class="dept_img">
                         <div class="text">Departamento de Comunicação</div>   
                         </div>
                     </div>                
                     
                     <div class="mySlides">
                         <div class="numbertext">2 / 6</div>
-                        <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+                        <img src="img/dept_financeiro.jpg" class="dept_img">
                         <div class="text">Departamento Financeiro</div>
                     </div>
                     
                     <div class="mySlides">
                         <div class="numbertext">3 / 6</div>
-                        <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                        <img src="img/dept_informatico.jpg" class="dept_img">
                         <div class="text">Departamento de Informática</div>
                     </div>
                     
                     <div class="mySlides">
                         <div class="numbertext">4 / 6</div>
-                        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                        <img src="img/dept_juridico.jpg" class="dept_img">
                         <div class="text">Departamento Jurídico</div>
                     </div>
                     
                     <div class="mySlides">
                         <div class="numbertext">5 / 6</div>
-                        <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+                        <img src="img/dept_rh.jpg" class="dept_img">
                         <div class="text">Departamento de Recursos Humanos</div>
                     </div>
                     
                     <div class="mySlides">
                         <div class="numbertext">6 / 6</div>
-                        <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                        <img src="img/dept_comercial.jpg" class="dept_img">
                         <div class="text">Departamento Comercial</div>
                     </div>
                     
@@ -267,7 +282,7 @@
                     <span class="dot" onclick="currentSlide(6)"></span> 
                 </div>
 
-                <div style="color:black; font-size:15px";>
+                <div class="container" style="color:black; font-size:15px;">
                     <div class="myDescriptions">
                         <p>O Departamento de Comunicação terá como base de trabalho a dinamização da imagem da sua empresa ou da sua marca, consoante ferramentas comunicacionais que a auxiliem, nomeadamente, no recurso à publicidade, na escrita criativa, na gestão de redes sociais e na produção de multimédia. Internamente, este gere a imagem da YME, através da redes sociais, do E-mail Marketing e do conteúdo do website. Realiza também todas as tarefas relacionadas com a criação de material de multimédia, seja para uso externo, seja para uso interno.</p>
                     </div>   
