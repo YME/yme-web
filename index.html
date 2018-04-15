@@ -233,6 +233,131 @@
         </section>
 
 
+        <style>
+            .img-modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+                cursor: zoom-out;
+            }
+
+            /* Modal Content (image) */
+            .img-modal-content {
+                margin: auto;
+                display: block;
+                width: auto;
+                max-width: 700px;
+                overflow: auto; /* Enable scroll if needed */
+            }
+
+            /* Caption of Modal Image */
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                font-size: 200%;
+                max-width: 700px;
+                text-align: center;
+                color: black;
+                /* color: #f64bbe; */
+                padding: 10px 0;
+                overflow: auto; /* Enable scroll if needed */
+            }
+
+            /* Add Animation */
+            .img-modal-content, #caption {    
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+
+            @-webkit-keyframes zoom {
+                from {-webkit-transform:scale(0)} 
+                to {-webkit-transform:scale(1)}
+            }
+
+            @keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+
+
+            /* 100% Image Width on Smaller Screens */
+            @media only screen and (max-width: 700px){
+                .img-modal-content {
+                    width: 100%;
+                }
+            }
+            </style>
+
+
+        <div id="helder_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Hélder Ferreira</span>
+                <p class="modal-member-job">Presidente</p>
+            </div>
+        </div>
+        <div id="abilio_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-1.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Abílio Rodrigues</span>
+                <p class="modal-member-job">Vice-Presidente</p>
+            </div>
+        </div>
+        <div id="francisca_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-2.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Francisca Gonçalves</span>
+                <p class="modal-member-job">Diretora do Departamento Financeiro</p>
+            </div>
+        </div>
+        <div id="marta_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-6.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Marta Moreira</span>
+                <p class="modal-member-job">Diretora do Departamento de Comunicação</p>
+            </div>
+        </div>
+        <div id="dalia_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-2.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Dália Carvalho</span>
+                <p class="modal-member-job">Diretora do Departamento de Recursos Humanos</p>
+            </div>
+        </div>
+        <div id="hugo_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-5.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Hugo Ferreira</span>
+                <p class="modal-member-job">Diretor do Departamento Comercial</p>
+            </div>
+        </div>
+        <div id="cesario_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-1.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Cesário Perneta</span>
+                <p class="modal-member-job">Diretor do Departamento de Informática</p>
+            </div>
+        </div>
+        <div id="nathalia_modal" class="img-modal" onclick="this.style.display='none'">
+            <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-7.jpg" alt="Hélder Ferreira">
+            <div id="caption" style="margin-top:10px; font-weight:800;">
+                <span class="modal-member-name">Nathália Lima</span>
+                <p class="modal-member-job">Diretora do Departamento Jurídico</p>
+            </div>
+        </div>
+
+
         <!-- Team Section -->
         <section id="team" class="bg-light-gray" style="text-align:center">
             <div class="container">
@@ -251,11 +376,12 @@
                             <ul class="list-inline social-buttons">
                                 <li><a target="_blank" href="https://pt.linkedin.com/in/helderjose11"><i class="fa fa-linkedin"></i></a>
                                 </li>
-                                <li><a style="cursor:pointer"><i class="fa fa-camera"></i></a>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('helder_modal').style.display='block'"><i class="fa fa-camera"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="col-sm-3">
                         <div class="team-member">
                             <!--<img src="img/team/InêsSquared.jpg" class="img-responsive img-circle" alt="" width='225px'>-->
@@ -263,6 +389,8 @@
                             <p class="text-muted">Vice-Presidente</p>
                             <ul class="list-inline social-buttons">
                                 <li><a target="_blank" href="https://linkedin.com/in/abílio-rodrigues"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('abilio_modal').style.display='block'"><i class="fa fa-camera"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -277,6 +405,8 @@
                             <p class="text-muted">Diretora do Departamento Financeiro</p>
                             <ul class="list-inline social-buttons">
                                 <li><a target="_blank" href="https://www.linkedin.com/in/francisca-gon%C3%A7alves-7b3316131/"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('francisca_modal').style.display='block'"><i class="fa fa-camera"></i></a>
                                 </li>
                             </ul>
                             <hr>
@@ -295,6 +425,8 @@
                             <p class="text-muted">Diretora do Departamento de Comunicação</p>
                             <ul class="list-inline social-buttons">
                                 <li><a target="_blank" href="https://pt.linkedin.com/in/marta-moreira-aba66812b"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('marta_modal').style.display='block'"><i class="fa fa-camera"></i></a>
                                 </li>
                             </ul>
                             <hr>
@@ -324,6 +456,8 @@
                             <ul class="list-inline social-buttons">
                                 <li><a target="_blank" href="https://www.linkedin.com/in/dália-carvalho1"><i class="fa fa-linkedin"></i></a>
                                 </li>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('dalia_modal').style.display='block'"><i class="fa fa-camera"></i></a>
+                                </li>
                             </ul>
                             <hr>
                             <!--<p class="text-muted"><a href="https://pt.linkedin.com/in/ana-pinto-9ba376131">+ Ana Pinto</a></p>
@@ -347,6 +481,8 @@
                             <ul class="list-inline social-buttons">
                                 </li>
                                 <li><a target="_blank" href="https://www.linkedin.com/in/hugo-ferreira-901011117/"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('hugo_modal').style.display='block'"><i class="fa fa-camera"></i></a>
                                 </li>
                             </ul>
 
@@ -374,6 +510,8 @@
                             <ul class="list-inline social-buttons">
                                 <li><a target="_blank" href="https://www.linkedin.com/in/cesário-perneta-0b9494b5/"><i class="fa fa-linkedin"></i></a>
                                 </li>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('cesario_modal').style.display='block'"><i class="fa fa-camera"></i></a>
+                                </li>
                             </ul>
                             <hr>
                      <p class="text-muted"><a target="_blank" href="https://www.linkedin.com/in/herulume/">+ Eduardo Barbosa</a></p>
@@ -389,6 +527,8 @@
                             <p class="text-muted">Diretora do Departamento Jurídico</p>
                             <ul class="list-inline social-buttons">
                                 <li><a target="_blank" href="https://www.linkedin.com/in/nath%C3%A1lia-lima-a07431131/"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a style="cursor:pointer" onclick="document.getElementById('nathalia_modal').style.display='block'"><i class="fa fa-camera"></i></a>
                                 </li>
                             </ul>
                             <hr>
