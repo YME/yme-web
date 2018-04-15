@@ -245,7 +245,7 @@
                 height: 100%; /* Full height */
                 overflow: auto; /* Enable scroll if needed */
                 background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+                background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
                 cursor: zoom-out;
             }
 
@@ -260,6 +260,7 @@
 
             /* Caption of Modal Image */
             #caption {
+                font-weight:800;
                 margin: auto;
                 display: block;
                 width: 80%;
@@ -270,6 +271,17 @@
                 /* color: #f64bbe; */
                 padding: 10px 0;
                 overflow: auto; /* Enable scroll if needed */
+            }
+
+            .modal-member-name {
+                text-shadow: 2px 2px black;
+                color: #f64bbe;
+            }
+
+            .modal-member-job {
+                font-size: 70%;
+                text-shadow: 1px 1px black;
+                color: #f64bbe;
             }
 
             /* Add Animation */
@@ -302,7 +314,7 @@
 
         <div id="helder_modal" class="img-modal" onclick="this.style.display='none'">
             <img class="img-modal-content" src="http://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg" alt="Hélder Ferreira">
-            <div id="caption" style="margin-top:10px; font-weight:800;">
+            <div id="caption">
                 <span class="modal-member-name">Hélder Ferreira</span>
                 <p class="modal-member-job">Presidente</p>
             </div>
