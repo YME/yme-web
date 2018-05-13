@@ -175,6 +175,7 @@
 
          <section class="services">
             <h2 id="lista_servicos" class="section-title">SERVIÇOS</h2>
+            <br><br>
             <div class="container">
                  <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
@@ -237,8 +238,10 @@
             </div>
         </section>
 
-         <section class="services" style="padding-top:0px;">
-            <p id="qualidade" class="desc semIndent" style="color:black; font-size:20px; margin-top:50px">COMO GARANTIMOS A QUALIDADE DOS NOSSOS SERVIÇOS?</p>
+         <section class="services" style="padding-top:0px; background-color: #f7f7f7">
+            <br><br>
+            <p id="qualidade" class="desc semIndent" style="color:black; font-size:20px; margin-top:50px; padding-left: 5%; padding-right: 5%">COMO GARANTIMOS A QUALIDADE DOS NOSSOS SERVIÇOS?</p>
+            <br>
             <style>
                 .icon-label {
                     text-align: center;
@@ -276,23 +279,56 @@
                     margin-left: 0px;
                     margin-right: 0px;
                 }
+                .slideanim {visibility:hidden;}
+                .slide {
+                    animation-name: slide;
+                    -webkit-animation-name: slide;
+                    animation-duration: 1s;
+                    -webkit-animation-duration: 1s;
+                    visibility: visible;
+                }
+                @keyframes slide {
+                    0% {
+                    opacity: 0;
+                    transform: translateY(70%);
+                    } 
+                    100% {
+                    opacity: 1;
+                    transform: translateY(0%);
+                    }
+                }
+                @-webkit-keyframes slide {
+                    0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(70%);
+                    } 
+                    100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0%);
+                    }
+                }
+
+                ul {
+                    padding-left: 0px;
+                }
+
             </style>
             <ul class="circle">
                 <div class="row">
                     <div class="col-sm-3"></div>
-                    <div class="col-sm-2" style="text-align:center">
+                    <div class="col-sm-2 slideanim" style="text-align:center">
                         <li><p><span style="font-size:60px;" class="fa fa-mortar-board"></span></p></li>
                         <br>
                         <span class="icon-label">Formações</span>
                         <br><br>
                     </div>
-                    <div class="col-sm-2" style="text-align:center">
+                    <div class="col-sm-2 slideanim" style="text-align:center">
                         <li><p><span style="font-size:60px;" class="fa fa-address-book"></span></p></li>
                         <br>
                         <span class="icon-label">Consultores</span>
                         <br><br>
                     </div>
-                    <div class="col-sm-2" style="text-align:center">
+                    <div class="col-sm-2 slideanim" style="text-align:center">
                         <li><p><span style="font-size:60px;" class="fa fa-child"></span></p></li>
                         <br>
                         <span class="icon-label">Recrutamento</span>
@@ -308,33 +344,36 @@
                <p> •    Recrutamento exigente e sistema de avaliações – Anualmente, realizamos um processo de recrutamento, de modo a selecionar os mais talentosos e proativos alunos da Universidade do Minho. Implementamos também um sistema de avaliação que certifica que um elevado nível de rigor e exigência é, constantemente, mantido. </p> 
            </div>-->
        </section>
+       
        <section class="services" style="padding-top:0px;">
-            <p id="porque_nos_devem_escolher" class="desc semIndent" style="color:black; font-size:20px">PORQUE NOS DEVEM ESCOLHER?</p>
+            <br><br>
+            <p id="porque_nos_devem_escolher" class="desc semIndent" style="color:black; font-size:20px; padding-left: 5%; padding-right: 5%">PORQUE NOS DEVEM ESCOLHER?</p>
+            <br>
             <ul class="circle">
                 <div class="row">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-2" style="text-align:center">
+                    <div class="col-sm-2 slideanim" style="text-align:center">
                         <li><p><span style="font-size:60px;" class="glyphicon glyphicon-usd"></span></p></li>
                         <br>
                         <span class="icon-label">Preços</span><br>
                         <span class="icon-label">competitivos</span>
                         <br><br>
                     </div>
-                    <div class="col-sm-2" style="text-align:center">
+                    <div class="col-sm-2 slideanim" style="text-align:center">
                         <li><p><span style="font-size:60px;" class="fa fa-cogs"></span></p></li>
                         <br>
                         <span class="icon-label">Serviços</span><br>
                         <span class="icon-label">personalizados</span>
                         <br><br>
                     </div>
-                    <div class="col-sm-2" style="text-align:center">
+                    <div class="col-sm-2 slideanim" style="text-align:center">
                         <li><p><span style="font-size:60px;" class="fa fa-users"></span></p></li>
                         <br>
                         <span class="icon-label">Equipa</span><br>
                         <span class="icon-label">multidisciplinar</span>
                         <br><br>
                     </div>
-                    <div class="col-sm-2" style="text-align:center">
+                    <div class="col-sm-2 slideanim" style="text-align:center">
                         <li><p><span style="font-size:60px;" class="fa fa-clock-o"></span></p></li>
                         <br>
                         <span class="icon-label">Investimento</span><br>
@@ -718,5 +757,20 @@
         </a>
     </div>
 
+    
+
+    <script>
+        // Slide in elements on scroll
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
